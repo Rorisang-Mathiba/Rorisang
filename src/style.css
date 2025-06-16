@@ -176,6 +176,10 @@ section {
   color: #fff;
 }
 
+.btn a {
+  color: #000;
+}
+
 .socials {
   display: flex;
   gap: 2rem;
@@ -309,4 +313,172 @@ section {
 .project-card h3 {
   font-size: 2rem;
   font-weight: 400;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.input-box input {
+  border-radius: 3rem;
+  border: 2px solid #000;
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.input-box input::placeholder {
+  font-size: 3rem;
+}
+
+.input {
+  position: relative;
+}
+
+.input i {
+  position: absolute;
+  font-size: 3rem;
+  top: 50%;
+  left: 10px;
+  transform: translate(50%, -50%);
+}
+
+.input-box:hover .btn:hover a {
+  background-color: #000;
+  color: #fff;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+footer ul li a {
+  color: #000;
+  font-weight: 600;
+}
+
+.copyright {
+  font-size: 300;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
+  .home .home-container {
+    gap: 3rem;
+  }
+  .about-info {
+    flex-direction: column;
+  }
+  .input-box input {
+    padding: 2rem 5rem;
+    font-size: 2.5rem;
+  }
+  .input-box input::placeholder {
+    font-size: 2.5rem;
+  }
+  .input-box i {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    gap: 1rem;
+    padding: 1rem 1rem;
+  }
+  header .logo {
+    font-size: 1rem;
+  }
+  header .visit-btn {
+    display: none;
+  }
+  .home-container {
+    flex-direction: column;
+  }
+  .input-box input {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+  }
+  .input-box input::placeholder {
+    font-size: 1.5rem;
+  }
+  .input-box i {
+    display: none;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-info img {
+    width: 70vw;
+  }
+}
+@media (max-width: 600px) {
+  header #menu-icon {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 3rem;
+    display: none;
+  }
+  .nav-links li {
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
+  .nav-links.active {
+    display: block;
+  }
+  header {
+    padding: 1rem 5rem;
+    gap: 8rem;
+  }
+  header .logo {
+    font-size: 1.5rem;
+  }
+  .home-container img {
+    width: 80vw;
+  }
+  .input-box input {
+    padding: 0.5rem 3rem;
+    width: 80%;
+    font-size: 1.5rem;
+  }
+  .input-box input::placeholder {
+    font-size: 1.5rem;
+  }
+  footer ul {
+    gap: 1rem;
+  }
 }
