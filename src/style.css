@@ -177,6 +177,7 @@ section {
 }
 
 .btn a {
+  text-decoration: none;
   color: #000;
 }
 
@@ -193,6 +194,10 @@ section {
 
 .socials i:hover {
   transform: scale(1.05);
+}
+
+.socials a {
+  color: #000;
 }
 
 .section-title {
@@ -348,8 +353,16 @@ section {
   transform: translate(50%, -50%);
 }
 
-.input-box:hover .btn:hover a {
+.input-box:hover .btn:hover {
   background-color: #000;
+  color: #fff;
+}
+
+.input-box a {
+  color: #000;
+}
+
+.input-box a:hover {
   color: #fff;
 }
 
